@@ -1,0 +1,52 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#c{
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.contenedor_principal{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.canvasyherr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1em;
+}
+
+.controles{
+    height: 50px;
+    width: calc(100% - 50px);
+    display: flex;
+    margin-top: 2px;
+}
+
+.controles div, .controles a{
+    cursor: pointer;
+    border: 1px solid black;
+    margin-right: 2px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+@media (max-width: 550px){
+    .canvasyherr{
+        align-items: center;
+    }
+    .controles div{
+        width: 30px;
+    }
+}
